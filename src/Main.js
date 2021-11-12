@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, NavLink, HashRouter} from 'react-router-dom';
+import { Routes, Route, NavLink, HashRouter } from 'react-router-dom';
 import { Home } from './components/Home';
 import { Stuff } from './components/Stuff';
 import { Contact } from './components/Contact';
@@ -17,9 +17,15 @@ export class Main extends Component {
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <div className="content">
-            <Route exact path="/" component={Home} />
-            <Route path="/Stuff" component={Stuff} />
-            <Route path="/Contact" component={Contact} />
+            <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Stuff" element={<Stuff />} />
+            <Route path="/Contact" element={<Contact />} />
+              {/* <Route exact path="/" component={Home} />
+              <Route path="/Stuff" component={Stuff} />
+              <Route path="/Contact" component={Contact} /> */
+              }
+            </Routes>
           </div>
         </div>
       </HashRouter>
