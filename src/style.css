@@ -1,9 +1,13 @@
 body {
-  background-color: #FFCC00;
+  background-color: #ffcc00;
   padding: 20px;
   margin: 0;
 }
-h1, h2, p, ul, li {
+h1,
+h2,
+p,
+ul,
+li {
   font-family: sans-serif;
 }
 ul.header li {
@@ -16,17 +20,17 @@ ul.header {
   padding: 0;
 }
 ul.header li a {
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
   display: inline-block;
 }
 .active {
-  background-color: #0099FF;
+  background-color: #0099ff;
 }
 .content {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 20px;
 }
 .content h2 {
@@ -35,4 +39,28 @@ ul.header li a {
 }
 .content li {
   margin-bottom: 10px;
+}
+
+.main-button {
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  padding: 5rem;
+  border: 1px black solid;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.main-button.loan {
+  background-color: #0099ff;
+}
+
+.main-button.borrow {
+  background-color: #ff9d00;
+}
+.back-btn {
 }
